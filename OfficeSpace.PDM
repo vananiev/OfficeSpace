@@ -1,0 +1,114 @@
+[Root]
+Most Recent Package=Standard Setup Package for OfficeSpace
+Most Recent Deploy=Folder Deployment for OfficeSpace
+
+[Package|Standard Setup Package for OfficeSpace|Softway]
+Icon1=OfficeSpace.exe
+Title1=OfficeSpace
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Deploy|Folder Deployment for OfficeSpace|Root]
+Package=Standard Setup Package for OfficeSpace
+Handler=PDWizard.FolderDplySubWiz
+Folder=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\Deploy
+
+
+[Package|Standard Setup Package for OfficeSpace|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\Package
+
+[Package|Standard Setup Package for OfficeSpace|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package for OfficeSpace|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package for OfficeSpace|Files Found]
+
+[Package|Standard Setup Package for OfficeSpace|Files Released]
+
+[Package|Standard Setup Package for OfficeSpace|Missing Dependency Information]
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\GMotion.dll=
+
+[Package|Standard Setup Package for OfficeSpace|Out-of-Date Dependency Information]
+E:\WINDOWS\system32\MSCOMCTL.OCX=
+
+[Package|Standard Setup Package for OfficeSpace|Files Added]
+
+[Package|Standard Setup Package for OfficeSpace|Files Removed]
+e:\windows\system32\msvbvm60.dll=
+e:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\oleaut32.dll=
+e:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\olepro32.dll=
+e:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\asycfilt.dll=
+e:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\stdole2.tlb=
+e:\program files\microsoft visual studio\vb98\wizards\pdwizard\redist\comcat.dll=
+
+[Package|Standard Setup Package for OfficeSpace|Files In Project]
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\OfficeSpace.exe=Yes
+E:\WINDOWS\system32\msvbvm60.dll=No
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=No
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=No
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=No
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=No
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=No
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\GMotion.dll=Yes
+E:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+E:\WINDOWS\system32\VB6STKIT.DLL=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package for OfficeSpace|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package for OfficeSpace|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package for OfficeSpace|Install Locations]
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\OfficeSpace.exe=$(AppPath)
+E:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\GMotion.dll=$(AppPath)
+E:\WINDOWS\system32\MSCOMCTL.OCX=$(AppPath)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+E:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+E:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package for OfficeSpace|Configure Shared Files]
+Applicable=Yes
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\OfficeSpace.exe=No
+E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\GMotion.dll=Yes
+E:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+
+[Package|Standard Setup Package for OfficeSpace|Distribution]
+Type=single
+Size=
+Title=OfficeSpace
+
+[Package|Standard Setup Package for OfficeSpace|IconGroups]
+Group0=VitekSoft
+PrivateGroup0=0
+Parent0=$(Programs)
+
+[Package|Standard Setup Package for OfficeSpace|VitekSoft]
+Icon1=OfficeSpace.exe
+Title1=OfficeSpace
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package for OfficeSpace|Package]
+PackageFolder=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\Package
+ProjectFolder=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game
+ServerSideCab=
+File1=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\Package\setup.exe
+File2=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\Package\Setup.Lst
+File3=E:\Program Files\Microsoft Visual Studio\VB98\Program Files\Game\Package\OfficeSpace.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
